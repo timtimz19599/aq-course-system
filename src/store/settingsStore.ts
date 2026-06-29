@@ -2,10 +2,10 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { assignColor, PRESET_COLORS } from '@/utils/colorUtils';
 
-const DEFAULT_ADMIN_HASH = 'ea7c63c36ff04a204b42e5ee59905f92913fc7f05a74987f71eb372e067d023f';
+const DEFAULT_ADMIN_HASH = 'cd2ab73c91e09e96a59c75460f1c46ed2d6a03a313c9ac93116f2e2710fc2cbf';
 
 // Bump this version whenever DEFAULT_ADMIN_HASH changes — forces a reset of stored hash
-const SETTINGS_VERSION = 4;
+const SETTINGS_VERSION = 5;
 
 interface SettingsState {
   adminPasswordHash: string;
